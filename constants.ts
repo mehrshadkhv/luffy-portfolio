@@ -34,6 +34,20 @@ import {
   DocumentDuplicateIcon,
 } from "./components/icons";
 
+import {
+  FiSmartphone,
+  FiCode,
+  FiLayers,
+  FiDatabase,
+  FiGlobe,
+  FiGitBranch,
+  FiCpu,
+  FiLayout,
+  FiServer,
+  FiTerminal,
+  FiActivity
+} from "react-icons/fi";
+
 // Import assets properly for Vite to process them
 // import vaLogoCircle from "./assets/";
 // import vickeyAppsProject from "./assets/";
@@ -73,48 +87,39 @@ export const VISITOR_STATS = {
 };
 
 export const PERSONAL_INFO: PersonalInfo = {
-  name: "Monkey D. Luffy",
-  title: "Future Pirate King",
-  bio: "Captain of the Straw Hat Pirates, adventurer, and lover of meat. Sailing the Grand Line in search of the One Piece!",
+  name: "Mehrshad Khodavirdizadeh",
+  title: "Flutter Developer",
+  bio: "Mobile Application Developer specializing in Flutter & Dart, focused on building scalable, high-performance cross-platform apps with clean architecture.",
   imageUrl:
-    "https://i.pinimg.com/736x/17/f8/9a/17f89aeae95b7293d61dfd79c102cbc7.jpg", // Luffy's anime portrait
-  email: "luffy@strawhats.com",
-  githubUsername: "octocat",
+    "https://media.licdn.com/dms/image/v2/D4D03AQFmGDHzrAuqiA/profile-displayphoto-scale_400_400/B4DZlzNBQFJUAg-/0/1758574418864?e=1790812800&v=beta&t=73iO8c36PvhOkraeg2jXzxPXlONobiM5eo42LQyGH5s", // Luffy's anime portrait
+  email: "mehrshadkho15@gmail.com",
+  githubUsername: "mehrshadkhv",
   // Text rotating around the profile photo on the home page
-  circularText: "MONKEY D. LUFFY • PIRATE KING • STRAW HAT • ",
+  circularText: "Open To  Work • Open To  Work • ",
   // Gap between letters on the circular text (try "0.5em", "0.9em", "1.2em")
-  circularTextLetterSpacing: "0.9em",
+  circularTextLetterSpacing: "1.0em",
   // Name swap animation (home hero, About "It's Me", footer only)
-  animatedNameEnglish: "Luffy",
-  animatedNameJapanese: "ルフィ",
+  animatedNameEnglish: "Mehrshad",
+  animatedNameJapanese: "メルシャド",
   // Opening intro animation (full-screen splash before the site)
-  introLetter1: "L",
-  introLetter2: "U",
-  introTagline: "Pirate • Dream Chaser",
+  introLetter1: "Hire",
+  introLetter2: "Me",
+  introTagline: "Mehrshad Khodavirdizadeh",
   aboutMeIntro:
-    "Hi! I'm Monkey D. Luffy, captain of the Straw Hat Pirates and future King of the Pirates! I love adventure, my friends, and especially meat. I ate the Gum-Gum Devil Fruit, so my body stretches like rubber! I'm sailing the Grand Line with my amazing crew, searching for the legendary One Piece treasure. I believe in freedom, friendship, and never giving up on your dreams. If you want to join my crew, you better have a dream and be ready for the adventure of a lifetime! Shishishi!",
+    "I am a Mobile Application Developer with a degree in Computer Engineering, dedicated to turning ideas into smooth, high-performance mobile experiences. I specialize in the Flutter & Dart ecosystem, bridging structured engineering with intuitive, responsive design.",
   aboutMeDetailed: [
-    "Luffy set sail from Foosha Village to find the legendary treasure, One Piece. Along the way, he gathered a loyal crew, defeated powerful enemies, and made friends all over the world.",
-    "When not fighting Marines or rival pirates, Luffy enjoys eating, napping, and having fun with his crew. He believes in freedom, friendship, and never giving up on his dreams!",
-    "Luffy possesses the power of the Gum-Gum Fruit, making his body stretch like rubber. He's also mastered all three types of Haki, making him one of the most formidable pirates on the seas.",
-    "He has a knack for turning enemies into allies, inspiring others with his unwavering spirit and simple honesty.",
-    "Luffy has a bounty that keeps rising, currently one of the highest in the world, and is recognized as one of the Worst Generation.",
-    "He has led the Straw Hat Pirates through legendary battles at places like Alabasta, Enies Lobby, Marineford, Dressrosa, Whole Cake Island, and Wano.",
-    "Luffy's dream is not just to find the One Piece, but to live a life of complete freedom and help his friends achieve their dreams too.",
-    "Favorite foods: Meat (all kinds), fish, and anything Sanji cooks!",
-    "Famous catchphrases: 'I'm gonna be King of the Pirates!' and 'I want to eat meat!'",
+    "With a strong background in Computer Engineering, my work focuses on architecting production-grade cross-platform applications from the ground up. I emphasize clean architecture, maintainability, and reliable state management using BLoC, ensuring apps remain robust and testable as they scale.\n\nMy experience spans the full mobile development lifecycle—from defining technical architectures and data modeling to integrating REST APIs, lightweight backends like PocketBase, and offline-first persistence with Hive. I care deeply about fluid performance, elegant user interactions, and writing clean, scalable Dart code.\n\nBeyond mobile development, I continuously explore modern computer networking, developer workflows, and system architectures to stay at the cutting edge of modern software engineering.",
   ],
-  aboutPageImageUrl:
-    "https://i.pinimg.com/736x/2c/e0/6b/2ce06b2cd9ab54ccb23f4f50359b6acc.jpg", // Luffy's anime portrait
+  aboutPageImageUrl: "https://avatars.githubusercontent.com/u/101244749?v=4", // Luffy's anime portrait
   projectsPageIntro:
-    "Check out my greatest adventures and pirate achievements! Each project brought me closer to my dream of becoming Pirate King.",
+    "A showcase of production-grade mobile applications and software projects, built with a focus on clean architecture, fluid performance, and intuitive user experiences.",
   sideProjectsPageIntro:
-    "Some of the wild side quests and inventions my crew and I have tackled on our journey!",
+    "A collection of open-source initiatives, experimental tools, and passion projects exploring new paradigms and architectures.",
   productsPageIntro:
-    "Explore the unique gadgets, ships, and treasures we've collected or built during our adventures!",
-  hireMePageTitle: "Join My Crew!",
+    "Complete applications and digital solutions engineered from concept to deployment, crafted for real-world impact and usability.",
+  hireMePageTitle: "Let's Build Something Together",
   hireMePageSubtitle:
-    "Got a dream? Want to sail the Grand Line? Send me a message and maybe you can join the Straw Hat Pirates!",
+    "Have an exciting project, a mobile app to engineer, or an engineering role to discuss? Drop a message below and let's talk.",
 };
 
 export const NAV_ITEMS_MAIN: NavItem[] = [
@@ -358,100 +363,88 @@ export const SIDE_PROJECTS: SideProject[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: "Instagram",
-    url: "https://instagram.com/monkeydluffy",
+    url: "https://www.instagram.com/mehrshadkhv",
     icon: InstagramIcon,
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/",
+    url: "https://www.linkedin.com/in/mehrshadkhv/",
     icon: LinkedinIcon,
   },
-  { name: "GitHub", url: "https://github.com/", icon: GithubIcon },
+  { name: "GitHub", url: "https://github.com/mehrshadkhv", icon: GithubIcon },
 ];
 
 export const SKILLS: Skill[] = [
   {
-    name: "Gum-Gum Powers",
-    backgroundColor: "bg-yellow-400",
-    textColor: "text-black",
-    icon: FiRefreshCw, // reuse React icon for stretching
-  },
-  {
-    name: "Haki",
-    backgroundColor: "bg-indigo-700",
+    name: "Flutter",
+    backgroundColor: "bg-sky-500",
     textColor: "text-white",
-    icon: FiShield, // shield for protection
+    icon: FiSmartphone,
   },
   {
-    name: "Navigation",
-    backgroundColor: "bg-blue-500",
+    name: "Dart",
+    backgroundColor: "bg-blue-600",
     textColor: "text-white",
-    icon: FiWind, // wind for sailing
+    icon: FiCode,
   },
   {
-    name: "Swordsmanship",
-    backgroundColor: "bg-green-600",
+    name: "BLoC State Management",
+    backgroundColor: "bg-purple-600",
     textColor: "text-white",
-    icon: PencilIcon, // pencil as a sword (closest match)
+    icon: FiLayers,
   },
   {
-    name: "Cooking",
-    backgroundColor: "bg-red-500",
+    name: "Clean Architecture",
+    backgroundColor: "bg-indigo-600",
     textColor: "text-white",
-    icon: FiCoffee, // coffee for food
+    icon: FiCpu,
   },
   {
-    name: "Medical Skills",
-    backgroundColor: "bg-pink-400",
+    name: "REST APIs & Dio",
+    backgroundColor: "bg-emerald-600",
     textColor: "text-white",
-    icon: PuzzlePieceIcon, // puzzle for Chopper's medical kit
+    icon: FiGlobe,
   },
   {
-    name: "Sniping",
-    backgroundColor: "bg-yellow-500",
-    textColor: "text-black",
-    icon: DocumentDuplicateIcon, // document icon for Usopp
-  },
-  {
-    name: "Shipwright",
-    backgroundColor: "bg-blue-700",
+    name: "Hive & Offline Storage",
+    backgroundColor: "bg-amber-500",
     textColor: "text-white",
-    icon: ServerStackIcon, // server stack for building
+    icon: FiDatabase,
   },
   {
-    name: "Archaeology",
-    backgroundColor: "bg-purple-500",
+    name: "PocketBase",
+    backgroundColor: "bg-teal-600",
     textColor: "text-white",
-    icon: DocumentDuplicateIcon, // document icon for Robin
+    icon: FiServer,
   },
   {
-    name: "Music",
-    backgroundColor: "bg-indigo-500",
+    name: "Git & Version Control",
+    backgroundColor: "bg-zinc-800",
     textColor: "text-white",
-    icon: FiFeather, // feather for music (closest match)
+    icon: FiGitBranch,
   },
   {
-    name: "Fishman Karate",
-    backgroundColor: "bg-teal-500",
+    name: "Networking & Protocols",
+    backgroundColor: "bg-cyan-600",
     textColor: "text-white",
-    icon: FiHexagon, // hexagon for Jinbe
+    icon: FiTerminal,
   },
   {
-    name: "Dream Chasing",
-    backgroundColor: "bg-orange-400",
+    name: "Responsive UI/UX",
+    backgroundColor: "bg-pink-600",
     textColor: "text-white",
-    icon: RocketLaunchIcon, // rocket for dreams
+    icon: FiLayout,
   },
   {
-    name: "Meat Eating",
-    backgroundColor: "bg-red-600",
+    name: "App Security & Storage",
+    backgroundColor: "bg-rose-600",
     textColor: "text-white",
-    icon: ShoppingBagIcon, // shopping bag for food
+    icon: FiShield,
   },
   {
-    name: "Friendship",
-    backgroundColor: "bg-green-400",
+    name: "Performance & Profiling",
+    backgroundColor: "bg-orange-500",
     textColor: "text-white",
-    icon: CheckBadgeIcon, // badge for friendship
+    icon: FiActivity,
   },
 ];
