@@ -15,23 +15,11 @@ import {
   UserIcon,
   Squares2X2Icon,
   ShoppingBagIcon,
-  CpuChipIcon,
-  PaintBrushIcon,
   RocketLaunchIcon,
-  PuzzlePieceIcon,
-  PencilIcon,
-  CheckBadgeIcon,
-  ServerStackIcon,
   LinkedinIcon,
   InstagramIcon,
   GithubIcon,
   FiShield,
-  FiWind,
-  FiCoffee,
-  FiHexagon,
-  FiRefreshCw,
-  FiFeather,
-  DocumentDuplicateIcon,
 } from "./components/icons";
 
 import {
@@ -44,7 +32,6 @@ import {
   FiCpu,
   FiLayout,
   FiServer,
-  FiTerminal,
   FiActivity
 } from "react-icons/fi";
 
@@ -78,7 +65,7 @@ export const DEVELOPER_CREDIT = {
  */
 export const VISITOR_STATS = {
   /** Shown when live Firebase counting is off or not configured */
-  staticCount: 10000800,
+  staticCount: 156,
   /**
    * false = always show staticCount (recommended for the open-source template)
    * true  = use your own Firebase Firestore counter when .env is filled in
@@ -100,10 +87,10 @@ export const PERSONAL_INFO: PersonalInfo = {
   circularTextLetterSpacing: "1.0em",
   // Name swap animation (home hero, About "It's Me", footer only)
   animatedNameEnglish: "Mehrshad",
-  animatedNameJapanese: "メルシャド",
+  animatedNameJapanese: "مهرشاد",
   // Opening intro animation (full-screen splash before the site)
-  introLetter1: "Hire",
-  introLetter2: "Me",
+  introLetter1: "Mehrshad",
+  introLetter2: "Khodavirdizadeh",
   introTagline: "Mehrshad Khodavirdizadeh",
   aboutMeIntro:
     "I am a Mobile Application Developer with a degree in Computer Engineering, dedicated to turning ideas into smooth, high-performance mobile experiences. I specialize in the Flutter & Dart ecosystem, bridging structured engineering with intuitive, responsive design.",
@@ -141,222 +128,65 @@ export const NAV_ITEMS_MAIN: NavItem[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: "project-going-merry",
-    iconComponent: RocketLaunchIcon,
-    iconBgColor: "bg-yellow-500 dark:bg-yellow-600",
-    name: "Going Merry Ship Upgrade",
+    id: "project-aviz",
+    iconComponent: RocketLaunchIcon, // Replace with HomeModernIcon if available
+    iconBgColor: "bg-blue-500 dark:bg-blue-600",
+    name: "Aviz Real Estate App",
     description:
-      "Major upgrades and repairs to the Straw Hats' first pirate ship, the Going Merry.",
+      "A comprehensive mobile application for real estate listings, buying, selling, and rentals.",
     technologies: [
-      "Woodworking",
-      "Engineering",
-      "Friendship",
-      "Sniper King Magic",
+      "Flutter",
+      "Dart",
+      "PocketBase",
+      "BLoC",
+      "Hive",
+      "Dio"
     ],
-    cardImageUrl:
-      "https://preview.redd.it/going-merry-or-thousand-sunny-v0-zwgzn343tqzb1.jpg?width=562&format=pjpg&auto=webp&s=e9ecd2766cd1fd9953efae2622abad1abd1c5f8d",
-    logoImageUrl:
-      "https://preview.redd.it/going-merry-or-thousand-sunny-v0-zwgzn343tqzb1.jpg?width=562&format=pjpg&auto=webp&s=e9ecd2766cd1fd9953efae2622abad1abd1c5f8d",
-    client: "Straw Hat Pirates",
-    company: "Water 7 Shipwrights",
-    projectType: "Ship Repair, Adventure",
-    year: "Grand Line Era",
-    tagline:
-      "The Going Merry carried us through countless adventures. She was more than a ship—she was our friend!",
+    cardImageUrl: "assets/aviz-icon.webp",
+    logoImageUrl: "assets/aviz-icon.webp",
+    client: "Software Project Course",
+    company: "Personal Project",
+    projectType: "Mobile Application",
+    year: "2026",
+    tagline: "Your ultimate platform for real estate transactions.",
     overview:
-      "After many battles and storms, the Going Merry needed serious repairs. With the help of the Water 7 shipwrights (and Usopp's determination), we gave her one last epic journey.",
-    liveLink: "https://onepiece.fandom.com/wiki/Going_Merry",
+      "Aviz is a cross-platform mobile application designed to streamline real estate listings, buying, selling, and rentals. Built with Flutter, the app utilizes BLoC for predictable state management and Hive for efficient local storage. The platform is powered by a relational PocketBase backend hosted on Chabokan, ensuring fast, secure, and robust data handling for a seamless property browsing experience.",
+    liveLink: "https://github.com/mehrshadkhv/Aviz", // Update with exact repo link
     images: [
-      "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/12/67a971cb-baf1-4821-8e0e-f6a221e77f6d.jpeg",
+      
     ],
     problemStatement: {
-      title: "Ship in Trouble!",
+      title: "Streamlining Property Listings",
       description:
-        "Our beloved ship was falling apart after so many adventures. We needed to fix her or risk losing our way to the Grand Line!",
-    },
-  },
-  {
-    id: "project-meat-inventory",
-    iconComponent: ShoppingBagIcon,
-    iconBgColor: "bg-red-500 dark:bg-red-600",
-    name: "Meat Inventory App",
-    description:
-      "A handy app to track all the meat supplies on the Thousand Sunny.",
-    technologies: ["React", "Meat Tracking", "Sanji's Recipes", "QR Code"],
-    cardImageUrl:
-      "https://preview.redd.it/if-sanji-tells-you-that-he-will-cook-any-dish-for-you-that-v0-txrdpkzu2fqb1.jpg?auto=webp&s=3cecbad31936393ee734a95dab67cfe30d77cb94",
-    logoImageUrl:
-      "https://preview.redd.it/if-sanji-tells-you-that-he-will-cook-any-dish-for-you-that-v0-txrdpkzu2fqb1.jpg?auto=webp&s=3cecbad31936393ee734a95dab67cfe30d77cb94",
-    client: "Luffy (for Sanji)",
-    company: "Straw Hat Pirates",
-    projectType: "Food Management, App",
-    year: "Grand Line Era",
-    tagline: "Never run out of meat again!",
-    overview:
-      "Sanji was tired of Luffy eating all the meat, so we built an app to keep track of supplies. Now, everyone gets their fair share (except when I get hungry).",
-    liveLink: "https://onepiece.fandom.com/wiki/Sanji",
-    images: [
-      "https://i.pinimg.com/736x/23/5f/15/235f15beabf134c30e3dc437a22ec884.jpg",
-    ],
-    problemStatement: {
-      title: "Where's the Meat?",
-      description:
-        "Meat kept disappearing from the kitchen. We needed a way to track it and keep Luffy honest!",
-    },
-  },
-  {
-    id: "project-crew-recruitment",
-    iconComponent: UserIcon,
-    iconBgColor: "bg-blue-600 dark:bg-blue-700",
-    name: "Pirate Crew Recruitment Portal",
-    description:
-      "A portal for recruiting new Straw Hat Pirates with big dreams.",
-    technologies: [
-      "React",
-      "Dream Detection",
-      "Wanted Posters",
-      "Grand Line Map",
-    ],
-    cardImageUrl:
-      "https://logowik.com/content/uploads/images/straw-hat-pirates3177.logowik.com.webp",
-    logoImageUrl:
-      "https://logowik.com/content/uploads/images/straw-hat-pirates3177.logowik.com.webp",
-    client: "Monkey D. Luffy",
-    company: "Straw Hat Pirates",
-    projectType: "Recruitment, Adventure",
-    year: "Grand Line Era",
-    tagline: "Got a dream? Join my crew!",
-    overview:
-      "We needed more nakama for our journey. This portal lets dreamers from all over the world apply to join the Straw Hat Pirates. Only those with true spirit make the cut!",
-    liveLink: "https://onepiece.fandom.com/wiki/Straw_Hat_Pirates",
-    images: [
-      "https://i.pinimg.com/736x/dc/e6/72/dce67240d40184611e1ee2d301b6d9ab.jpg",
-    ],
-    problemStatement: {
-      title: "Need More Nakama!",
-      description:
-        "The Grand Line is tough. We need strong, loyal friends to help us reach the end!",
-    },
-  },
-  {
-    id: "project-grand-line-map",
-    iconComponent: ServerStackIcon,
-    iconBgColor: "bg-green-600 dark:bg-green-700",
-    name: "Grand Line Navigation System",
-    description:
-      "A high-tech map and log pose tracker for navigating the Grand Line.",
-    technologies: [
-      "Log Pose",
-      "Weather Science",
-      "Nami's Cartography",
-      "React",
-    ],
-    cardImageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/3/39/Onepiece-welt_(2).png",
-    logoImageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/3/39/Onepiece-welt_(2).png",
-    client: "Nami",
-    company: "Straw Hat Pirates",
-    projectType: "Navigation, Mapping",
-    year: "Grand Line Era",
-    tagline: "Never get lost again! (Unless Luffy's steering)",
-    overview:
-      "Nami built a navigation system to help us survive the Grand Line's crazy weather and islands. Now we only get lost when Luffy ignores her directions!",
-    liveLink: "https://onepiece.fandom.com/wiki/Nami",
-    images: [
-      "https://preview.redd.it/one-piece-world-map-v0-phf7wbld54zc1.jpeg?width=1080&crop=smart&auto=webp&s=540c62ca48e64cade0d16c251b1e46d6ebe3197c",
-    ],
-    problemStatement: {
-      title: "Lost at Sea",
-      description:
-        "The Grand Line is full of surprises. We needed a way to track our journey and avoid danger!",
+        "Navigating the real estate market can be fragmented. Aviz unifies listings, providing users with a fast, cross-platform experience to find or advertise properties effortlessly.",
     },
   },
 ];
 
 export const SIDE_PROJECTS: SideProject[] = [
-  {
-    id: "side-1",
-    iconComponent: PaintBrushIcon,
-    iconBgColor: "bg-pink-500 dark:bg-pink-600",
-    name: "Wanted Poster Generator",
-    tag: "OPEN SOURCE",
-    link: "#",
-    linkText: "Try Now",
+ {
+    id: "side-financial-app",
+    iconComponent: FiActivity,
+    iconBgColor: "bg-emerald-500 dark:bg-emerald-600",
+    name: "Personal Financial Manager",
+    tag: "MOBILE APP",
+    link: "https://github.com/mehrshadkhv/Financial", // لینک ریپازیتوری گیت‌هاب را اینجا قرار دهید
+    linkText: "View Project",
     description:
-      "Create your own pirate wanted poster! Upload a photo and get your bounty.",
-    cardImageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcRNIzKewfHkPM_RztQBv_NA4JyRlgVi6cgA&s",
-    year: "2024",
-    projectType: "Web App",
-    tagline: "Make yourself look dangerous — even if you just ate meat.",
-    overview:
-      "A fun demo product page showing how side projects can open a full details view in this portfolio template.",
-    technologies: ["React", "Canvas", "Typography"],
-    keyFeatures: [
-      "Upload a face and generate a poster",
-      "Customize bounty text",
-      "Export as image",
-    ],
-  },
-  {
-    id: "side-2",
-    iconComponent: CpuChipIcon,
-    iconBgColor: "bg-teal-500 dark:bg-teal-600",
-    name: "Devil Fruit Encyclopedia",
-    tag: "LIVE DEMO",
-    link: "#",
-    linkText: "Explore",
-    description:
-      "Browse all known Devil Fruits and their powers. Beware of side effects!",
-    cardImageUrl:
-      "https://static.vecteezy.com/system/resources/previews/046/805/836/non_2x/devil-fruits-gomu-gomu-no-monkey-d-luffy-one-piece-free-png.png",
+      "A Flutter application for tracking daily income and expenses with detailed financial reporting.",
+    cardImageUrl: "assets/financial.webp", // مسیر یکی از اسکرین‌شات‌هایی که فرستادید را اینجا بگذارید
     year: "2025",
-    projectType: "Web App",
-    tagline: "Know every fruit before you bite it.",
-    overview: "Example product with richer metadata for the details page.",
-    technologies: ["React", "Search", "Content"],
-  },
-  {
-    id: "side-3",
-    iconComponent: PencilIcon,
-    iconBgColor: "bg-yellow-500 dark:bg-yellow-600",
-    name: "Zoro's Sword Tracker",
-    tag: "Live on Play Store",
-    playStoreStats: {
-      downloads: "1K+",
-      rating: "4.5",
-    },
-    link: "#",
-    linkText: "Play Store",
-    description: "Keep track of all swords Zoro has owned (and lost).",
-    cardImageUrl:
-      "https://image.made-in-china.com/202f0j00wtkMBPJAMEqi/104cm-Roronoa-Zoro-Carbon-Steel-One-Piece-Anime-Cartoon-Cosplay-Sword-Purple.webp",
-    year: "2026",
-    projectType: "Android App",
-    tagline: "Never lose a sword again (or do, and still track it).",
+    projectType: "Mobile Application",
+    tagline: "Track, manage, and analyze your personal transactions effortlessly.",
     overview:
-      "Demo of Play Store metrics badges (downloads + average rating) on product cards and detail pages.",
-    technologies: ["Android", "Flutter"],
+      "A personal finance management application built entirely with Flutter and Dart. It enables users to record income and expenses, search through transaction history, and view comprehensive financial summaries (daily, monthly, and yearly). The app features full Persian localization and integrates a custom Jalali (Shamsi) date picker for a seamless, native-feeling user experience.",
+    technologies: ["Flutter", "Dart", "Hive", "Local Storage"],
     keyFeatures: [
-      "Log every sword in the collection",
-      "Mark lost / found status",
-      "Share bounty-ready screenshots",
+      "Record and categorize income (دریافتی) and expenses (پرداختی)",
+      "Real-time search functionality for transaction history",
+      "Integrated Persian (Jalali) calendar for intuitive date selection",
+      "Automated financial dashboards for daily, monthly, and annual reports",
     ],
-  },
-  {
-    id: "side-4",
-    iconComponent: PuzzlePieceIcon,
-    iconBgColor: "bg-indigo-500 dark:bg-indigo-600",
-    name: "Chopper's Medical Kit",
-    tag: "HOBBY PROJECT",
-    link: "#",
-    linkText: "View Kit",
-    description:
-      "A digital guide to Chopper's favorite remedies and medicines.",
-    cardImageUrl: "https://s1.zerochan.net/Tony.Tony.Chopper.600.2356091.jpg",
-    year: "2023",
-    projectType: "Web Tool",
   },
 ];
 
@@ -424,12 +254,6 @@ export const SKILLS: Skill[] = [
     icon: FiGitBranch,
   },
   {
-    name: "Networking & Protocols",
-    backgroundColor: "bg-cyan-600",
-    textColor: "text-white",
-    icon: FiTerminal,
-  },
-  {
     name: "Responsive UI/UX",
     backgroundColor: "bg-pink-600",
     textColor: "text-white",
@@ -440,11 +264,5 @@ export const SKILLS: Skill[] = [
     backgroundColor: "bg-rose-600",
     textColor: "text-white",
     icon: FiShield,
-  },
-  {
-    name: "Performance & Profiling",
-    backgroundColor: "bg-orange-500",
-    textColor: "text-white",
-    icon: FiActivity,
   },
 ];
